@@ -18,7 +18,7 @@ RUN sed -i 's/^#html_strategy cron/html_strategy cgi/g' /etc/munin/munin.conf
 # Disable localhost monitoring.
 RUN sed -i 's/^\[localhost\.localdomain\]/#\[localhost\.localdomain\]/g' /etc/munin/munin.conf
 RUN sed -i 's/^    address 127.0.0.1/#    address 127.0.0.1/g' /etc/munin/munin.conf
-RUN  sed -i 's/^    use_node_name yes/#    use_node_name yes/g' /etc/munin/munin.conf)
+RUN sed -i 's/^    use_node_name yes/#    use_node_name yes/g' /etc/munin/munin.conf
 
 # Create munin dirs.
 RUN mkdir -p /var/run/munin
