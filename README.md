@@ -1,7 +1,7 @@
 # Munin Server
 
-[![Docker Stars](https://img.shields.io/docker/stars/jekil/docker-munin-server.svg)][hub]
-[![Docker Pulls](https://img.shields.io/docker/pulls/jekil/docker-munin-server.svg)][hub]
+[![Docker Stars](https://img.shields.io/docker/stars/jekil/docker-munin-server.svg)](https://hub.docker.com/r/jekil/docker-munin-server/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/jekil/docker-munin-server.svg)](https://hub.docker.com/r/jekil/docker-munin-server/)
 [![Image Size](https://img.shields.io/imagelayers/image-size/jekil/docker-munin-server/latest.svg)](https://imagelayers.io/?images=jekil/docker-munin-server:latest)
 [![Image Layers](https://img.shields.io/imagelayers/layers/jekil/docker-munin-server/latest.svg)](https://imagelayers.io/?images=jekil/docker-munin-server:latest)
 [![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://github.com/jekil/docker-munin-server)
