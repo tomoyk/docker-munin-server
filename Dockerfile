@@ -25,6 +25,7 @@ RUN mkdir -p /var/run/munin
 RUN chown -R munin:munin /var/run/munin
 
 COPY run.sh /usr/local/bin/start-munin
+COPY munin-slack-notify /usr/local/bin/munin-slack-notify
 COPY nginx.conf /etc/nginx/sites-available/default
 
 VOLUME /var/lib/munin
