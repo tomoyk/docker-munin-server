@@ -6,7 +6,7 @@ MAINTAINER Alessandro Tanasi <alessandro@tanasi.it>
 RUN apt-get update
 
 # Setup.
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y munin cron nginx spawn-fcgi libcgi-fast-perl
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y munin cron nginx spawn-fcgi libcgi-fast-perl curl
 
 # Clean.
 RUN apt-get clean
@@ -25,8 +25,10 @@ RUN mkdir -p /var/run/munin
 RUN chown -R munin:munin /var/run/munin
 
 COPY run.sh /usr/local/bin/start-munin
-COPY munin-slack-notify /usr/local/bin/munin-slack-notify
 COPY nginx.conf /etc/nginx/sites-available/default
+
+COPY notify_slack_munin /usr/local/bin/notify_slack_munin
+RUN chmod +x /usr/local/bin/notify_slack_munin
 
 VOLUME /var/lib/munin
 VOLUME /var/log/munin

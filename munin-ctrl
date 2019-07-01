@@ -1,0 +1,15 @@
+#!/bin/bash
+
+case $1 in
+
+  "start"  )  docker run -d -p 127.0.0.1:8800:80 \
+                -v $PWD/data/lib:/var/lib/munin \
+                -v $PWD/data/log:/var/log/munin \
+                -v $PWD/data/conf:/etc/munin:ro \
+                -v /etc/localtime:/etc/localtime:ro \
+                --restart=always \
+                munin-server ;;
+  "stop"   )  docker ps | grep start-munin | awk '{print $1}' | xargs docker stop | xargs docker rm ;;
+  *        )  echo "(usage) munin-service.sh [start|stop]" ;;
+
+esac
