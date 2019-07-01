@@ -13,7 +13,7 @@ It can be totally configured by command line, passing the hosts you want to moni
 
 ---
 
-**This image forked from `jekil/docker-munin-server`. **
+**This image forked from `jekil/docker-munin-server`.**
 
 There are three overwrote points.
 
