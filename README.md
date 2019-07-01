@@ -13,7 +13,9 @@ It can be totally configured by command line, passing the hosts you want to moni
 
 ---
 
-**This image forked from `jekil/docker-munin-server`. There are two overwrote points.**
+**This image forked from `jekil/docker-munin-server`. **
+
+There are three overwrote points.
 
 1. **Supported `notify_slack_munin` command**  => Enable to nitify slack
 2. **Added `munin-ctrl` command**  => Easy to manage munin-server
