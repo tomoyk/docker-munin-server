@@ -54,6 +54,10 @@ sudo ./munin-ctrl start
 sudo ./munin-ctrl stop
 ```
 
+[4] Access on `http://127.0.0.1:8800/`
+
+If you want to change port, you should chanage on `munin-ctrl`.
+
 ## Technical details
 
 Ports exposed:
